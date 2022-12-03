@@ -36,7 +36,7 @@
 
         <div class="navbar-end">
           <div class="navbar-item">
-            <a class="is-small is-inverted is-outlined is-warning">Donate</a>
+            <button class="button is-link" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=UEUQ2CNQD6EK6">Donate</button>
           </div>
         </div>
       </div>
@@ -52,17 +52,28 @@
 
     <section class="section">
       <div class="container">
-        <h3 class="is-size-3">Joonha Hwang</h3>
-        <h5 class="is-size-5">GTGCAA Scholarship Recipient</h5>
-        <p>Idk something about him</p>
+        <h1 class="title is-size-3">The Winners</h1>
+        <div class="columns">
+          <img class="column is-one-third" src="pics/Joonha.jpg">
+          <div class="column">
+            <h3 class="is-size-3">Joonha Hwang</h3>
+            <h5 class="is-size-5">GTGCAA Scholarship Recipient</h5>
+            <p>Joonha is the current president of the Glee Club and has been a member for 2 years.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h3 class="is-size-3">Andrew Tillery</h3>
-        <h5 class="is-size-5">Crawford Family Scholarship Recipient</h5>
-        <p>Idk something about him</p>
+        <div class="columns">
+          <img class="column is-one-third" src="pics/andrew.jpg">
+          <div class="column">
+            <h3 class="is-size-3">Andrew Tillery</h3>
+            <h5 class="is-size-5">Crawford Family Scholarship Recipient</h5>
+            <p>Andrew is the current manager of the Glee Club and has been a member for 4 years.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -79,3 +90,27 @@
 
   </body>
 </html>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+
+  });
+</script>

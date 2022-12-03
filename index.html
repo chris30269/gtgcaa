@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="bulma/css/bulma.css">
     <!--<link rel="stylesheet" type="text/css" href="style.css">-->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style type="text/css">
+        .has-bg-img { background: url('pics/group.jpg')center center; background-size:cover; }
+      </style>
   </head>
   <body class="has-navbar-fixed-top">
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -36,11 +39,20 @@
 
         <div class="navbar-end">
           <div class="navbar-item">
-            <a class="is-small is-inverted is-outlined is-warning">Donate</a>
+            <button class="button is-link" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=UEUQ2CNQD6EK6">Donate</button>
           </div>
         </div>
       </div>
     </nav>
+
+    <section class="hero is-large is-bold has-bg-img">
+        <div class="hero-body">
+          <div class="container">
+            <!-- <h1 class="title" style="text-shadow:0px 0px 10px rgba(255,255,255,.5)">The Georgia Tech Glee Club</h1>
+            <h2 class="subtitle">is gr9</h2> -->
+          </div>
+        </div>
+        </section>
 
     <section class="section">
       <div class="container">
@@ -63,3 +75,27 @@
 
   </body>
 </html>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+
+  });
+</script>
