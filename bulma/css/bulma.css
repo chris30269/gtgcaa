@@ -236,9 +236,6 @@ fieldset[disabled] .pagination-ellipsis {
 html,
 body,
 p,
-ol,
-ul,
-li,
 dl,
 dt,
 dd,
@@ -270,9 +267,6 @@ h6 {
   font-weight: normal;
 }
 
-ul {
-  list-style: none;
-}
 
 button,
 input,
