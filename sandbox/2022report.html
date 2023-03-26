@@ -13,7 +13,7 @@
 <script>
 
 // set the dimensions and margins of the graph
-var width = 450
+var width = 900
     height = 450
     margin = 40
 
@@ -29,7 +29,11 @@ var svg = d3.select("#my_dataviz")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // Create dummy data
-var data = {dinner: 9, yearly: 20, onetime:30, scholarships:8}
+var data = {dinner: 1673.24, yearly: 392.59, onetime:325, scholarships:1000}
+//dinner: 219.00+702.99+751.25+36.18 = 1673.24
+//yearly: 165.00+138.87+58.00+13.37+17.35 = 392.59
+//onetime: 275.00+50 = 325
+//scholarships: 1000
 
 // set the color scale
 var color = d3.scaleOrdinal()
